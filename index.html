@@ -4,8 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gradient Generator</title>
+
+    <!-- custom css & script -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
+
+    <div class="container">
     
+        <h1>Css Gradient Generator</h1>
+
+        <h3>Chose Orientation</h3>
+
+        <div class="buttons">
+            <button data-direction="to top">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            <button data-direction="to bottom" class="active">
+                <i class="fas fa-arrow-down"></i>
+            </button>
+            <button data-direction="to right">
+                <i class="fas fa-arrow-right"></i>
+            </button>
+            <button data-direction="to left">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+            <button data-direction="to top right" class="rotate-icon">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            <button data-direction="to bottom left" class="rotate-icon">
+                <i class="fas fa-arrow-down"></i>
+            </button>
+            <button data-direction="to bottom right" class="rotate-icon">
+                <i class="fas fa-arrow-right"></i>
+            </button>
+            <button data-direction="to top left" class="rotate-icon">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+        </div>
+
+        <h3>Enter Colors</h3>
+        <div class="colors">
+            <input type="color" id="color-a" value="#db80ca">
+            <input type="color" id="color-b" value="#ddc964">
+        </div>
+    </div>
+
 </body>
 </html>
