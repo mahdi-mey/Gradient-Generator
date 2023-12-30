@@ -21,13 +21,6 @@ body{
     gap: 1.2rem;
     text-align: center;
 
-
-    /* backdrop-filter: blur(16px) saturate(200%);
-    -webkit-backdrop-filter: blur(16px) saturate(181%);
-    background-color: rgba(255, 255, 255, 0.4);
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.125); */
-
     background: rgba(255, 255, 255, 0.1);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -68,9 +61,9 @@ input[type="color"]::-webkit-color-swatch{
     backdrop-filter: blur(16px) saturate(200%);
     -webkit-backdrop-filter: blur(16px) saturate(181%);
     border-radius: 6px;
-    border: 1px solid rgba(142, 142, 142, 0.507);
     cursor: pointer;
     transition: all 0.07s linear;
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .code:hover{
     background-color: #e2e2e2;
@@ -78,4 +71,7 @@ input[type="color"]::-webkit-color-swatch{
 }
 .code code{
     font-size: 1.15em;
+}
+.rotate-icon i{
+    transform: rotate(45deg);
 }
