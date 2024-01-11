@@ -22,5 +22,24 @@ function generateCssCode(event){
     document.body.style.cssText += cssCode
 }
 
+function setDirection(datasetValue, targetElem){
+    for(let items of arrowButtons){
+        items.classList.remove('active')
+    }
+
+    targetElem.classList.add('active')
+
+    currentDirection = datasetValue
+}
+
+arrowButtons.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+        console.log(e.target);
+        let datasetValue = e.target.dataset.direction
+        setDirection(datasetValue, e.target)
+        generateCssCode()
+    })
+})
+
 colorInputOne.addEventListener('input', generateCssCode)
 colorInputTwo.addEventListener('input', generateCssCode)
