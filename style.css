@@ -44,6 +44,10 @@ button:hover{
     background-color: #e2e2e2;
     outline: 1px solid #7b7b7b;
 }
+button.active{
+    background-color: #e2e2e2;
+    outline: 1px solid #7b7b7b;
+}
 input[type="color"]{
     -webkit-appearance: none;
     background-color: transparent;
@@ -78,4 +82,7 @@ input[type="color"]::-webkit-color-swatch{
 }
 .rotate-icon i{
     transform: rotate(45deg);
+}
+i{
+    pointer-events: none;
 }
