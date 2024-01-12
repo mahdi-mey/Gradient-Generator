@@ -6,6 +6,7 @@ const codeContainer = document.querySelector('.code')
 
 let currentDirection = 'to right'
 
+// this fnuction coppies gradient code
 codeContainer.addEventListener('click', () => {
     let oldText = resultArea.innerHTML
     navigator.clipboard.writeText(resultArea.innerHTML)
@@ -18,7 +19,7 @@ codeContainer.addEventListener('click', () => {
 function generateCssCode(event){
     let cssCode = `background: linear-gradient(${currentDirection}, ${colorInputOne.value}, ${colorInputTwo.value});`
 
-    resultArea.value = cssCode
+    resultArea.innerText = cssCode
     document.body.style.cssText += cssCode
 }
 
@@ -30,6 +31,7 @@ function setDirection(datasetValue, targetElem){
     targetElem.classList.add('active')
 
     currentDirection = datasetValue
+    console.log(currentDirection);
 }
 
 arrowButtons.forEach(btn => {
@@ -43,3 +45,5 @@ arrowButtons.forEach(btn => {
 
 colorInputOne.addEventListener('input', generateCssCode)
 colorInputTwo.addEventListener('input', generateCssCode)
+
+generateCssCode()
