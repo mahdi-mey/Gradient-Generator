@@ -9,3 +9,5 @@ Additionally, when the user clicks the result area, the generated code is automa
 - Select from eight different directions for the gradient.
 - Real-time preview of the gradient on the webpage background.
 - Copy the generated code to the clipboard by clicking on the result area.
+
+[Preview](https://mahdi-mey.github.io/Gradient-Generator/)
